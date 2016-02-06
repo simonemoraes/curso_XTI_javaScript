@@ -1,0 +1,94 @@
+
+                    <div id="painel" class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Calculo do IMC</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form id="formulario" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="kilos" class="col-xs-3 control-label">Kilos:</label>
+                                    <div class="col-xs-7 col-md-5">
+                                        <input type="text" name="kilos" class="form-control"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="altura" class="col-xs-3 control-label">Altura</label>
+                                    <div class="col-xs-7 col-md-5">
+                                        <input type="text" name="altura" class="form-control" id="altura"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="imc" class="col-xs-3 control-label">IMC:</label>
+                                    <div class="col-xs-7 col-md-5">
+                                        <input type="text" name="imc" disabled="disabled" class="form-control"/>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="col-xs-offset-3 col-xs-3 btn btn-primary" onclick="calcularIMC();">Calcular</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+               
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-7">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-condensed tabela text-center">
+                                <thead>
+                                    <tr class="active">
+                                        <th>IMC</th>
+                                        <th>Classificação</th>                                    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td><20</td>
+                                        <td>Abaixo do Peso</td>
+
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>20 a 25</td>
+                                        <td>Peso Ideal</td>
+
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>25 a 30</td>
+                                        <td>Sobrepeso</td>
+
+                                    </tr>
+                                    <tr class="info">
+                                        <td>30 a 35</td>
+                                        <td>Obesidade Moderada</td>
+
+                                    </tr >
+                                    <tr class="success">
+                                        <td>35 a 40</td>
+                                        <td>Obesidade Severa</td>
+
+                                    </tr>
+
+                                    <tr class="warning">
+                                        <td>40 a 50</td>
+                                        <td>Obesidade Móbida</td>
+
+                                    </tr>
+
+                                    <tr class="danger">
+                                        <td>>50</td>
+                                        <td>Super Obesidade</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div> 
